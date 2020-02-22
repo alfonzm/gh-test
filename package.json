@@ -1,0 +1,20 @@
+{
+  "name": "gh-test",
+  "version": "1.0.0",
+  "description": "My flawless Nuxt.js project",
+  "author": "Alfonz",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "gh-pages": "^2.2.0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
