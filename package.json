@@ -10,8 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "generate:gh": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy:gh": "DEPLOY_ENV=GH_PAGES gh-pages -d dist",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "gh-pages -d dist --dotfiles",
+    "prod": "npm run generate:gh && npm run deploy"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -19,7 +19,7 @@
     "gh-pages": "^2.2.0",
     "nuxt": "^2.0.0"
   },
-  "homepage": "https://alfonzm.github.io/gh-test",
+  "homepage": "https://alfonzm.github.io/nuxt-gh",
   "devDependencies": {
     "push-dir": "^0.4.1"
   }

@@ -1,6 +1,8 @@
 # gh-test
 
-> My flawless Nuxt.js project
+Sample project on how to deploy a Nuxt.js generated static site to GitHub pages.
+
+Docs: https://nuxtjs.org/faq/github-pages/
 
 ## Build Setup
 
@@ -18,5 +20,13 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## Deploy to GitHub Pages
+
+```bash
+$ npm run prod
+```
+
+This will generate your Nuxt build into dist folder, then deploy the dist folder to the gh-pages branch.
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
