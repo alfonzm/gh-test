@@ -1,6 +1,12 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/gh-test/'
+  }
+} : {}
 
 export default {
   mode: 'spa',
+  ...routerBase,
   /*
   ** Headers of the page
   */
